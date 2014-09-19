@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- This is one row for the listview in activity_list.xml  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"   
+	    android:background="@color/darkgreen" 
+	    android:orientation="horizontal" > 
+
+		<TextView
+		    android:id="@+id/rowHeaderStart"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:text="@string/headerStartTime"
+		    android:textAppearance="?android:attr/textAppearanceMedium"
+		    android:paddingBottom="@dimen/SubTitleVerticalPadding"
+        	android:paddingTop="@dimen/SubTitleVerticalPadding"
+		    android:textColor="@color/white"
+		    android:textSize="@dimen/UurappFontSize"
+		    android:width="@dimen/RowStartWidth" />
+		
+		<TextView
+		    android:id="@+id/rowHeaderEnd"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:text="@string/headerEndTime"
+		    android:textAppearance="?android:attr/textAppearanceMedium"
+		    android:paddingBottom="@dimen/SubTitleVerticalPadding"
+        	android:paddingTop="@dimen/SubTitleVerticalPadding"
+		    android:textColor="@color/white"
+		    android:textSize="@dimen/UurappFontSize"
+		    android:width="@dimen/RowEndWidth" />
+	
+		<TextView
+		    style="@style/TextViewAbbrv"
+		    android:id="@+id/rowHeaderOrganizationAbbrv"
+		    android:layout_weight=".33"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:gravity="left"
+		    android:text="@string/headerOrganizationAbbrv"
+		    android:textAppearance="?android:attr/textAppearanceMedium"
+		    android:textColor="@color/white"
+		    android:textSize="@dimen/UurappFontSize" />
+		
+		<TextView
+		    style="@style/TextViewNonAbbrv"
+		    android:id="@+id/rowHeaderOrganization"
+		    android:layout_weight=".33"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:gravity="left"
+		    android:text="@string/headerOrganization"
+		    android:textAppearance="?android:attr/textAppearanceMedium"
+		    android:textColor="@color/white"
+		    android:textSize="@dimen/UurappFontSize" />
+		
+		<TextView
+		    style="@style/TextViewAbbrv"
+		    android:id="@+id/rowHeaderActivityAbbrv"
+		    android:layout_weight=".33"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:gravity="left"
+		    android:paddingBottom="@dimen/SubTitleVerticalPadding"
+        	android:paddingTop="@dimen/SubTitleVerticalPadding"
+		    android:text="@string/headerActivityAbbrv"
+		    android:textAppearance="?android:attr/textAppearanceMedium"
+		    android:textColor="@color/white"
+		    android:textSize="@dimen/UurappFontSize" />
+		
+		<TextView
+		    style="@style/TextViewNonAbbrv"
+		    android:id="@+id/rowHeaderActivity"
+		    android:layout_weight=".33"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:gravity="left"
+		    android:paddingBottom="@dimen/SubTitleVerticalPadding"
+        	android:paddingTop="@dimen/SubTitleVerticalPadding"
+		    android:text="@string/headerActivity"
+		    android:textAppearance="?android:attr/textAppearanceMedium"
+		    android:textColor="@color/white"
+		    android:textSize="@dimen/UurappFontSize" />
+		
+		<TextView
+		    style="@style/TextViewAbbrv"
+		    android:layout_weight=".33"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:paddingBottom="@dimen/SubTitleVerticalPadding"
+        	android:paddingTop="@dimen/SubTitleVerticalPadding"
+		    android:gravity="left"
+		    android:text="@string/headerProjectAbbrv"
+		    android:textAppearance="?android:attr/textAppearanceMedium"
+		    android:textColor="@color/white"
+		    android:textSize="@dimen/UurappFontSize" />
+		
+		<TextView
+		    style="@style/TextViewNonAbbrv"
+		    android:layout_weight=".33"		    
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:paddingBottom="@dimen/SubTitleVerticalPadding"
+        	android:paddingTop="@dimen/SubTitleVerticalPadding"
+		    android:gravity="left"
+		    android:text="@string/headerProject"
+		    android:textAppearance="?android:attr/textAppearanceMedium"
+		    android:textColor="@color/white"
+		    android:textSize="@dimen/UurappFontSize" />
+	
+</LinearLayout>

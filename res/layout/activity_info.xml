@@ -1,0 +1,73 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="top|center_horizontal"
+	    android:orientation="vertical" >
+	
+	    <ImageView
+	        android:id="@+id/imageView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@color/white"
+	        android:contentDescription="@string/contentDescriptionLogo"
+	        android:src="@drawable/logo" />
+	
+	     <TextView
+	         android:id="@+id/textViewTitleLogin"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:background="@color/darkgreen"
+	         android:gravity="center_horizontal"
+	         android:paddingBottom="@dimen/SubTitleVerticalPadding"
+	         android:paddingTop="@dimen/SubTitleVerticalPadding"
+	         android:text="@string/subtitle_about"
+	         android:textAppearance="?android:attr/textAppearanceMedium"
+	         android:textSize="@dimen/UurappFontSize" />
+
+	    <TextView
+	        android:id="@+id/textViewAbout"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/SubTitlePageTopPadding"
+	        android:ems="10"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:textColor="@color/darkgreen"
+	        android:textSize="@dimen/UurappFontSize" >
+	     </TextView>
+	     
+	     <TextView
+	         android:id="@+id/textViewVersion"
+	         android:layout_width="match_parent"
+	         android:layout_height="wrap_content"
+	         android:ems="10"
+	         android:gravity="center_vertical|center_horizontal"
+	         android:text="@string/dummyVersion"
+	         android:textColor="@color/darkgreen"
+	         android:textSize="15sp" >
+	     </TextView>
+	     
+	    <TextView
+	        android:id="@+id/textViewRegister"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_horizontal"
+	        android:paddingBottom="@dimen/SubTitleVerticalPadding"
+	        android:paddingTop="@dimen/SubTitlePageTopPadding"
+	        android:text="@string/linkToWebsite"
+	        android:textSize="12sp" >
+	    </TextView>
+
+	    <Button
+	        android:id="@+id/buttonToPlayStore"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/button_shape"
+	        android:text="@string/btnReview" />
+	
+	</LinearLayout>
+</ScrollView>

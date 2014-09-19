@@ -1,0 +1,59 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/black"
+	    android:gravity="top|center_horizontal"
+	    android:orientation="vertical">
+	
+	    
+	    
+	     <TextView
+	         android:id="@+id/textViewTitleLogin"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:background="@color/darkgreen"
+	         android:gravity="center_horizontal"
+	         android:paddingBottom="@dimen/SubTitleVerticalPadding"
+	         android:paddingTop="@dimen/SubTitleVerticalPadding"
+	         android:text="@string/subtitle_register"
+	         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<TextView
+		    android:id="@+id/textViewRegisterInstruction"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="left|center_horizontal"
+		    android:paddingBottom="@dimen/RegisterInstructionTextMarge"
+		    android:paddingLeft="@dimen/RegisterInstructionTextMarge"
+		    android:paddingRight="@dimen/RegisterInstructionTextMarge"
+		    android:paddingTop="@dimen/RegisterInstructionTextMarge"
+		    android:textAppearance="?android:attr/textAppearance"
+		    android:text="Je account is aangemaakt. Er is een email gestuurd ter controle. Klik op de link in deze email" />
+
+		<TextView
+		    android:id="@+id/textViewRegisterThanks"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="left|center_horizontal"
+		    android:paddingBottom="@dimen/RegisterInstructionTextMarge"
+		    android:paddingLeft="@dimen/RegisterInstructionTextMarge"
+		    android:paddingRight="@dimen/RegisterInstructionTextMarge"
+		    android:paddingTop="@dimen/RegisterInstructionTextMarge"
+		    android:textAppearance="?android:attr/textAppearance"
+		    android:text="Bedankt dat je voor Uurapp hebt gekozen!" />
+			    
+	    <Button
+	        android:id="@+id/buttonToLogin"
+	        android:background="@drawable/button_shape"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Inloggen" />
+	
+	    
+	    
+	</LinearLayout>
+</ScrollView>

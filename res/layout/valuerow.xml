@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+	<TextView
+	    android:id="@+id/rowValueName"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/UurappRowHeight"
+	    android:layout_margin="@dimen/UurappRowMargin"
+	    android:textColor="@color/table_row_text"
+	    android:text="@string/dummyOrganization"
+	    android:gravity="center_vertical"
+	    android:textAppearance="?android:attr/textAppearanceMedium"
+	    android:textSize="@dimen/UurappFontSize" />
+	
+	<TextView
+	    android:id="@+id/rowValueID"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="15dp"
+	    android:text="@string/dummyGuid"
+	    android:visibility="gone"
+	    android:width="@dimen/RowStartWidth" />
+
+</LinearLayout>

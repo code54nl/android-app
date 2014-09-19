@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/layoutNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layoutNavigation"
+        android:layout_alignParentTop="true"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:id="@+id/containerMaster"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/ViewMargin"
+            android:layout_weight="0.5"
+            android:padding="@dimen/ViewPadding" >
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/containerDetail"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/ViewMargin"
+            android:layout_weight="0.5"
+            android:padding="@dimen/ViewPadding" >
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lightgreen"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/buttonCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ButtonMarginBottom"
+            android:layout_marginLeft="@dimen/ButtonMarginLeft"
+            android:layout_marginRight="@dimen/ButtonMarginRight"
+            android:layout_marginTop="@dimen/ButtonMarginTop"
+            android:background="@drawable/button_shape"
+            android:contentDescription="@string/label_cancel"
+            android:src="@drawable/navigation_cancel" />
+
+        <ImageButton
+            android:id="@+id/buttonSelectToday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ButtonMarginBottom"
+            android:layout_marginLeft="@dimen/ButtonMarginLeft"
+            android:layout_marginRight="@dimen/ButtonMarginRight"
+            android:layout_marginTop="@dimen/ButtonMarginTop"
+            android:background="@drawable/button_shape"
+            android:contentDescription="@string/label_today"
+            android:src="@drawable/collections_go_to_today" />
+
+        <ImageButton
+            android:id="@+id/buttonFinish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ButtonMarginBottom"
+            android:layout_marginLeft="@dimen/ButtonMarginLeft"
+            android:layout_marginRight="@dimen/ButtonMarginRight"
+            android:layout_marginTop="@dimen/ButtonMarginTop"
+            android:background="@drawable/button_shape"
+            android:contentDescription="@string/label_finish"
+            android:src="@drawable/content_save" />
+
+        <ImageButton
+            android:id="@+id/buttonDetailOK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ButtonMarginBottom"
+            android:layout_marginLeft="@dimen/ButtonMarginLeft"
+            android:layout_marginRight="@dimen/ButtonMarginRight"
+            android:layout_marginTop="@dimen/ButtonMarginTop"
+            android:background="@drawable/button_shape"
+            android:contentDescription="@string/label_detailOK"
+            android:src="@drawable/navigation_next_item"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

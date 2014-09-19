@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/border"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textViewTitleOrganization"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkgreen"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/SubTitleVerticalPadding"
+        android:paddingTop="@dimen/SubTitleVerticalPadding"
+        android:text="Details"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white"
+        android:textSize="@dimen/UurappFontSize" >
+    </TextView>
+
+    <ListView
+        android:id="@+id/listViewMaster"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:choiceMode="singleChoice"
+        android:drawSelectorOnTop="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="@dimen/UurappFontSize" >
+    </ListView>
+
+</LinearLayout>

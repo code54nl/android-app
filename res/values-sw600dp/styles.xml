@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="TextViewAbbrv">
+        <item name="android:visibility">gone</item>       
+    </style>
+    <style name="TextViewNonAbbrv">
+        <item name="android:visibility">visible</item>       
+    </style>
+</resources>

@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/DatePickerFrame"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/border"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textViewTitleDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkgreen"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/SubTitleVerticalPadding"
+        android:paddingTop="@dimen/SubTitleVerticalPadding"
+        android:text="@string/subtitle_date"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white"
+        android:textSize="@dimen/UurappFontSize" />
+
+    <DatePicker
+        android:id="@+id/datePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:calendarViewShown="false"
+        android:paddingBottom="@dimen/SubTitleVerticalPadding"
+        android:paddingTop="@dimen/SubTitleVerticalPadding"
+        android:textSize="@dimen/UurappFontSize" />
+
+</LinearLayout>

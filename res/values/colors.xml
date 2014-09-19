@@ -1,0 +1,16 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="darkgreen">#006663</color>
+    <color name="lightgreen">#009893</color>
+    <color name="gray">#B1B3B3</color>
+	<color name="lightgray">#DDDDDD</color>
+	
+	<color name="titlebar_background">#f5f5f5</color>
+	<color name="titlebar_text">#6E6E6E</color>
+	<color name="table_row_text">#777777</color>
+	<color name="table_row_select_background">#FFFFCC</color>
+	<color name="table_row_alt_background">#F5F5F5</color>
+</resources>

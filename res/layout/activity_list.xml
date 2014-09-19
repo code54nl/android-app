@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TotalFrame"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/DatePickerFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/ViewMargin"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        android:padding="@dimen/ViewPadding" >
+
+        <TextView
+            android:id="@+id/textViewTitleDate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darkgreen"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/SubTitleVerticalPadding"
+            android:paddingTop="@dimen/SubTitleVerticalPadding"
+            android:text="@string/subtitle_date"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/UurappFontSize" />
+
+        <DatePicker
+            android:id="@+id/datePicker1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:calendarViewShown="false"
+            android:paddingBottom="@dimen/SubTitleVerticalPadding"
+            android:paddingTop="@dimen/SubTitleVerticalPadding"
+            android:textSize="@dimen/UurappFontSize" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/timeList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ButtonFrame"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/ViewMargin"
+        android:layout_toRightOf="@+id/DatePickerFrame"
+        android:background="@drawable/border"
+        android:drawSelectorOnTop="false"
+        android:longClickable="true"
+        android:padding="@dimen/ViewPadding"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="@dimen/UurappFontSize" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/ButtonFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lightgreen"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/buttonListToday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ButtonMarginBottom"
+            android:layout_marginLeft="@dimen/ButtonMarginLeft"
+            android:layout_marginRight="@dimen/ButtonMarginRight"
+            android:layout_marginTop="@dimen/ButtonMarginTop"
+            android:background="@drawable/button_shape"
+            android:contentDescription="@string/label_today"
+            android:src="@drawable/collections_go_to_today" />
+
+        <ImageButton
+            android:id="@+id/buttonListLogOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ButtonMarginBottom"
+            android:layout_marginLeft="@dimen/ButtonMarginLeft"
+            android:layout_marginRight="@dimen/ButtonMarginRight"
+            android:layout_marginTop="@dimen/ButtonMarginTop"
+            android:background="@drawable/button_shape"
+            android:contentDescription="@string/label_logoff"
+            android:src="@drawable/device_access_secure" />
+
+        <ImageButton
+            android:id="@+id/buttonListAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ButtonMarginBottom"
+            android:layout_marginLeft="@dimen/ButtonMarginLeft"
+            android:layout_marginRight="@dimen/ButtonMarginRight"
+            android:layout_marginTop="@dimen/ButtonMarginTop"
+            android:background="@drawable/button_shape"
+            android:contentDescription="@string/label_add"
+            android:src="@drawable/content_new" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/timeListInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/DatePickerFrame"
+        android:gravity="center_vertical|center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="@dimen/UurappFontSize" />
+
+</RelativeLayout>

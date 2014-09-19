@@ -1,0 +1,101 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:contentDescription="@string/contentDescriptionLogo"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textViewTitleLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darkgreen"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/SubTitleVerticalPadding"
+            android:paddingTop="@dimen/SubTitleVerticalPadding"
+            android:text="@string/subtitle_login"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/UurappFontSize" />
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_username"
+            android:singleLine="true"
+            android:inputType="none" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ems="10"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword" />
+
+        <CheckBox
+            android:id="@+id/checkBoxAutoLogon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_autologon" />
+
+        <LinearLayout
+            android:id="@+id/ButtonFrame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightgreen"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/SubTitleVerticalPadding" >
+
+            <Button
+                android:id="@+id/buttonToRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ButtonMarginBottom"
+                android:layout_marginLeft="@dimen/ButtonMarginLeft"
+                android:layout_marginRight="@dimen/ButtonMarginRight"
+                android:layout_marginTop="@dimen/ButtonMarginTop"
+                android:background="@drawable/button_shape"
+                android:text="Registreren" />
+
+            <Button
+                android:id="@+id/buttonLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ButtonMarginBottom"
+                android:layout_marginLeft="@dimen/ButtonMarginLeft"
+                android:layout_marginRight="@dimen/ButtonMarginRight"
+                android:layout_marginTop="@dimen/ButtonMarginTop"
+                android:background="@drawable/button_shape"
+                android:text="@string/label_login" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewLinkToWebsite"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/SubTitleVerticalPadding"
+            android:paddingTop="@dimen/SubTitlePageTopPadding"
+            android:text="@string/linkToWebsite"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- This is one row for the listview in MasterDetail -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/rowMasterKey"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/UurappRowHeight"
+        android:gravity="left|center_vertical"
+        android:text="Master Row Key"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/table_row_text"
+        android:textSize="@dimen/UurappFontSize"
+        android:layout_margin="@dimen/UurappRowMargin" />
+
+    <TextView
+        android:id="@+id/rowMasterValue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/UurappRowHeight"
+        android:gravity="right|center_vertical"
+        android:text="Master Row Value"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black"
+        android:textSize="@dimen/UurappFontSize"
+        android:layout_margin="@dimen/UurappRowMargin" />
+
+</LinearLayout>

@@ -1,0 +1,163 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="top|center_horizontal"
+	    android:orientation="vertical">
+	    
+	     <TextView
+	         android:id="@+id/textViewTitleLogin"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:background="@color/darkgreen"
+	         android:gravity="center_horizontal"
+	         android:paddingBottom="@dimen/SubTitleVerticalPadding"
+	         android:paddingTop="@dimen/SubTitleVerticalPadding"
+	         android:text="@string/subtitle_register"
+	         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<TextView
+		    android:id="@+id/textViewRegisterInstruction"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="left|center_horizontal"
+		    android:paddingBottom="@dimen/RegisterInstructionTextMarge"
+		    android:paddingLeft="@dimen/RegisterInstructionTextMarge"
+		    android:paddingRight="@dimen/RegisterInstructionTextMarge"
+		    android:paddingTop="@dimen/RegisterInstructionTextMarge"
+		    android:textAppearance="?android:attr/textAppearance"
+		    android:text="Vul onderstaande velden in om een account aan te maken. Je kunt je account ook aanmaken via www.uurapp.nl." />
+	     
+	    <EditText
+	        android:id="@+id/editTextOrganizationName"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:hint="Bedrijfsnaam"
+	        android:inputType="textCapSentences" >	
+	        <requestFocus />
+	    </EditText>
+	
+	    <EditText
+	        android:id="@+id/editTextFirstname"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:hint="Voornaam"
+	        android:inputType="textCapSentences" >	
+	    </EditText>
+
+	    <EditText
+	        android:id="@+id/editTextLastname"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:hint="Achternaam"
+	        android:inputType="textCapSentences" >	
+	    </EditText>
+	    
+	    <EditText
+	        android:id="@+id/editTextLoginName"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:hint="Gewenste inlognaam"
+	        android:inputType="none" >	
+	    </EditText>    
+	    	    
+	    <EditText
+	        android:id="@+id/editPassword1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:hint="Kies een wachtwoord"
+	        android:inputType="textPassword" />
+	    
+	    <EditText
+	        android:id="@+id/editPassword2"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:hint="Herhaal het wachtwoord"
+	        android:inputType="textPassword" />
+	    
+	    <EditText
+	        android:id="@+id/editTextEmail"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:hint="Email adres"
+	        android:inputType="textEmailAddress" >	
+	    </EditText> 
+	    
+   	    <EditText
+   	        android:id="@+id/editTextAddress"
+   	        android:layout_width="match_parent"
+   	        android:layout_height="wrap_content"
+   	        android:ems="10"
+   	        android:hint="Adres (straat)"
+   	        android:inputType="textCapSentences" >
+	
+	    </EditText> 
+	    
+   	    <EditText
+   	        android:id="@+id/editTextPostcode"
+   	        android:layout_width="match_parent"
+   	        android:layout_height="wrap_content"
+   	        android:ems="10"
+   	        android:hint="Postcode"
+   	        android:inputType="textCapCharacters" >
+	
+	    </EditText> 
+   	    
+	  	<EditText
+	        android:id="@+id/editTextCity"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:hint="Plaats"
+	        android:inputType="textCapSentences" >	
+	    </EditText> 
+	    
+	    <EditText
+	        android:id="@+id/editTextCountry"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:hint="Land"
+	        android:inputType="none"
+	        android:text="Nederland" >
+	
+	    </EditText>    	    
+	  	
+	     <TextView
+	         android:id="@+id/textViewConditions"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:gravity="left"
+	         android:paddingLeft="10dp"
+	         android:paddingBottom="@dimen/SubTitleVerticalPadding"
+	         android:paddingTop="@dimen/SubTitlePageTopPadding"
+	         android:text="Voorwaarden bekijken" />
+	     
+	    <CheckBox
+	        android:id="@+id/checkBoxAcceptConditions"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Akkoord met voorwaarden" />
+	    
+	    
+	    <Button
+	        android:id="@+id/buttonRegister"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"	 
+	        android:background="@drawable/button_shape"       
+	        android:text="Registreren" />
+	
+	   
+	    
+	</LinearLayout>
+</ScrollView>
